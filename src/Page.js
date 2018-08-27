@@ -14,23 +14,22 @@ export default class Page extends React.Component {
 
     return (
       <div>
-        <div>
-          <button onClick={this.onBtnClick} type="button">
+        <p>
+          <button className="btn" onClick={this.onBtnClick} type="button">
             2018
           </button>
-          <button onClick={this.onBtnClick} type="button">
+          <button className="btn" onClick={this.onBtnClick} type="button">
             2017
           </button>
-          <button onClick={this.onBtnClick} type="button">
+          <button className="btn" onClick={this.onBtnClick} type="button">
             2016
           </button>
-          <button onClick={this.onBtnClick} type="button">
+          <button className="btn" onClick={this.onBtnClick} type="button">
             2015
           </button>
-        </div>
-        <p>
-          У тебя, {photos.length} фото за {year} год
         </p>
+        <h3>{year} год</h3>
+        <p>У тебя {photos.length} фото.</p>
       </div>
     );
   }

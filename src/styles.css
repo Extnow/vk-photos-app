@@ -1,0 +1,24 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin: 50px auto 0px;
+}
+
+ .btn {
+  border: none;
+  border-radius: 2px;
+  font-size: 16px;
+  padding: 0.7rem 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #6383a8;
+  text-align: center;
+  transition: .2s ease-out;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.btn:hover {
+  background-color: #85a1c2
+}

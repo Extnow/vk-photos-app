@@ -1,1 +1,1 @@
-## Тестовый проект vk-photos по книге redux-course-ru-v2
+## Учебный проект vk-photos по книге redux-course-ru-v2
