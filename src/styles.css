@@ -1,8 +1,35 @@
+.app {
+  max-width: 90%;
+  margin: 50px auto 0px;
+}
+
 .row {
   display: flex;
   justify-content: space-between;
-  width: 1000px;
-  margin: 50px auto 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+.error {
+  color: red;
+}
+
+.list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list__item {
+  margin-left: 5px;
+}
+
+.list__item:first-child {
+  margin-left: 0;
 }
 
  .btn {
@@ -16,7 +43,6 @@
   text-align: center;
   transition: .2s ease-out;
   cursor: pointer;
-  margin-right: 5px;
 }
 
 .btn:hover {

@@ -1,30 +1,10 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import User from './User';
-import Page from './Page';
-import { setYear } from './actions/PageActions';
+import PageContainer from './PageContainer';
+import UserContainer from './UserContainer';
 
-const App = ({ user, page, setYearAction }) => (
+export default () => (
   <div className="row">
-    <Page photos={page.photos} year={page.year} setYear={setYearAction} />
-    <User name={user.name} />
+    <PageContainer />
+    <UserContainer />
   </div>
 );
-
-const mapStateToProps = (store) => {
-  console.log(store);
-
-  return {
-    user: store.user,
-    page: store.page,
-  };
-};
-
-const mapDispatchToProps = dispatch => ({
-  setYearAction: year => dispatch(setYear(year)),
-});
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(App);
