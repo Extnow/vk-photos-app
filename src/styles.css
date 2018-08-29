@@ -9,6 +9,11 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.photo {
+  display: inline-block;
+  margin-right: 5px;
+}
+
 p {
   margin: 0;
 }
